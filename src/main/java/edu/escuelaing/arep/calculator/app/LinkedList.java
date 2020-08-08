@@ -12,7 +12,6 @@ public class LinkedList<Obj> implements Iterable<Obj> {
         this.size = 0;
     }
 
-
     public void addNodeRight(Obj x){
         Node<Obj> node = new Node<Obj>(x,null,null);
         if (tail == null) {
@@ -44,7 +43,7 @@ public class LinkedList<Obj> implements Iterable<Obj> {
         if (tail.equals(head)){
             tail = head = null;
         }else{
-            Node penult = tail.getPrior();
+            Node<Obj> penult = tail.getPrior();
             penult.setNext(null);
             tail = penult;
         }
@@ -52,23 +51,20 @@ public class LinkedList<Obj> implements Iterable<Obj> {
         return value;
     }
 
-    public Double getElementByIndex(int i){
-        return ans.get(i);
-    }
 
-    public Node getHead() {
+    public Node<Obj> getHead() {
         return head;
     }
 
-    public void setHead(Node head) {
+    public void setHead(Node<Obj> head) {
         this.head = head;
     }
 
-    public Node getTail() {
+    public Node<Obj> getTail() {
         return tail;
     }
 
-    public void setTail(Node tail) {
+    public void setTail(Node<Obj> tail) {
         this.tail = tail;
     }
 
@@ -80,23 +76,10 @@ public class LinkedList<Obj> implements Iterable<Obj> {
         this.size = size;
     }
 
-    public Node getNode() {
-        return node;
-    }
-
-    public void setNode(Node node) {
-        this.node = node;
-    }
-
-    public List<Double> getAns() {
-        return ans;
-    }
-
-    public void setAns(List<Double> ans) {
-        this.ans = ans;
-    }
-
     public Iterator<Obj> iterator() {
-        return null;
+        return new IteratorImpl<Obj>(this);
     }
+
+
+
 }

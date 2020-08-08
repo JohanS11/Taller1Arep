@@ -14,19 +14,19 @@ public class Node<Obj> {
     public Node() {
     }
 
-    public Node getPrior() {
+    public Node<Obj> getPrior() {
         return prior;
     }
 
-    public void setPrior(Node prior) {
+    public void setPrior(Node<Obj> prior) {
         this.prior = prior;
     }
 
-    public Node getNext() {
+    public Node<Obj> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<Obj> next) {
         this.next = next;
     }
 
