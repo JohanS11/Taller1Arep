@@ -124,7 +124,7 @@ public class LinkedList<Obj> implements Iterable<Obj> {
 
     /**
      * Implementation method of the class Iterable
-     * @return LinkedList<Obj>
+     * @return LinkedList
      */
     public Iterator<Obj> iterator() {
         return new IteratorImpl<Obj>(this);

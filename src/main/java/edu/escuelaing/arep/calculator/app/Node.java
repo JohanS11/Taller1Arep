@@ -2,6 +2,7 @@ package edu.escuelaing.arep.calculator.app;
 
 
 /**
+ * Node class that contains a value, prior node and next node
  * @author Johan Sebastian Arias
  * @param <Obj> type of the object in the node
  */
