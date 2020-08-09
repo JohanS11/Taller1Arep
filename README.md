@@ -58,6 +58,10 @@
      
      ![test2](img/test2.png)
      
+     ### Coverage of the tests
+     
+     ![test3](img/testCoverage.png)
+     
   ## This project was built with:
   
    - Apache Maven 3.6.3
