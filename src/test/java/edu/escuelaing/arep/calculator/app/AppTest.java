@@ -29,6 +29,10 @@ public class AppTest {
     private final LinkedList<Double> linkedList3 = new LinkedList<Double>();
     private final LinkedList<Double> linkedList4 = new LinkedList<Double>();
     private final LinkedList<Double> linkedList5 = new LinkedList<Double>();
+    private final LinkedList<Double> linkedListTest= new LinkedList<Double>();
+    private final LinkedList<Double> linkedListTest2= new LinkedList<Double>();
+    private final LinkedList<Double> linkedListTest3= new LinkedList<Double>();
+
 
     @Before
     public void setup() {
@@ -77,6 +81,35 @@ public class AppTest {
         assertEquals(6.1, calculator.calcStandardDeviation(linkedList3), 0.05);
         assertEquals(436.94, calculator.calcStandardDeviation(linkedList4), 0.05);
         assertEquals(434.98, calculator.calcStandardDeviation(linkedList5), 0.05);
+    }
+    @Test
+    public void shouldAddNodesRight(){
+        double[] values = {1.11,2.23,5.32,1.02,5.12,10.11,11.11,10.11,9.11};
+        for (double i : values){
+            linkedListTest.addNodeRight(i);
+        }
+        assertEquals(9,linkedListTest.getSize());
+
+    }
+    @Test
+    public void shouldAddNodesLeft(){
+        double[] values = {1.02,23.12,56.11,132.11,23.344,99.13,13.321,3213.1,10.10,11.133};
+        for (double i : values){
+            linkedListTest2.addNodeLeft(i);
+        }
+        assertEquals(10,linkedListTest2.getSize());
+    }
+    @Test
+    public void shouldRemove() throws ListException{
+        linkedListTest3.addNodeRight(1.01);
+        linkedListTest3.addNodeRight(1.02);
+        linkedListTest3.addNodeRight(1.03);
+        linkedListTest3.addNodeRight(1.04);
+        linkedListTest3.addNodeRight(1.05);
+        linkedListTest3.addNodeRight(1.06);
+        linkedListTest3.removeNodeRight();
+        linkedListTest3.removeNodeRight();
+        assertEquals(4,linkedListTest3.getSize());
     }
 
 }
