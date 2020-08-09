@@ -2,6 +2,10 @@ package edu.escuelaing.arep.calculator.app;
 
 import java.util.List;
 
+/**
+ * Exception that is generated when the LinkedList is empty.
+ * @author Johan Sebastián Arias
+ */
 public class ListException extends Exception{
     public static final String EMPTY_LIST = "Empty list, unable to remove the element!";
 
