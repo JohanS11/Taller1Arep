@@ -53,6 +53,10 @@ public class AppTest {
 
         assertEquals(550.6, calculator.calcMean(linkedListProxy), 0.0);
         assertEquals(60.32, calculator.calcMean(linkedListDevelopment), 0.0);
+    }
+
+    @Test
+    public void shouldCalculateMeanSets(){
         assertEquals(43.21, calculator.calcMean(linkedList1), 0.0);
         assertEquals(42.56, calculator.calcMean(linkedList2), 0.0);
         assertEquals(14.18, calculator.calcMean(linkedList3), 0.0);
@@ -64,6 +68,10 @@ public class AppTest {
     public void shouldCalculateStandarD() {
         assertEquals(572.03, calculator.calcStandardDeviation(linkedListProxy), 0.05);
         assertEquals(62.26, calculator.calcStandardDeviation(linkedListDevelopment), 0.05);
+    }
+
+    @Test
+    public void shouldCalculateSdSets(){
         assertEquals(57.44, calculator.calcStandardDeviation(linkedList1), 0.05);
         assertEquals(55.77, calculator.calcStandardDeviation(linkedList2), 0.05);
         assertEquals(6.1, calculator.calcStandardDeviation(linkedList3), 0.05);
