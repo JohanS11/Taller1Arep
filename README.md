@@ -5,6 +5,13 @@
 ## Description
 
   This program calculates the mean and the standard deviation via manual implementation of LinkedLists.
+ 
+## Design 
+
+  This is the intended design for this project
+  
+  ![uml](DesignDiagram/appDesign.png)
+  
 
 ## User's guide
 
