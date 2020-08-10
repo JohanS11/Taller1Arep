@@ -58,7 +58,7 @@
      
      ![test2](img/test2.png)
      
-     ### Coverage of the tests
+     ### Tests coverage
      
      ![test3](img/testCoverage.png)
      
