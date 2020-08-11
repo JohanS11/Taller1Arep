@@ -56,7 +56,7 @@
      
      ![test1](img/test1.png)
      
-     ![test2](img/test2.png)
+     ![test2](img/testRunning.png)
      
      ### Tests coverage
      
