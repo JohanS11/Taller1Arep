@@ -29,7 +29,7 @@
   
 1. **Clone this repository:** 
 
-    `git clone https://github.com/JohanS11/Taller1Arep.git`
+   `git clone https://github.com/JohanS11/Taller1Arep.git`
 
 2. **Build the project with maven:**
   
@@ -71,7 +71,7 @@
   ## Java Documentation
   
   In order to get additional information about this project you can use JavaDoc to get the Documentation.
-  The documentation of this project is located in the folder **JavaDoc** at the root of this project.
+  The documentation of this project is located in this [site](https://johans11.github.io/Taller1Arep/project-reports.html)
   
   ## Author
   
