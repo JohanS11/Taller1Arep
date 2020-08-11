@@ -34,6 +34,10 @@ public class AppTest {
     private final LinkedList<Double> linkedListTest3= new LinkedList<Double>();
 
 
+    /**
+     * Setting up the data that will be used
+     * Initializing every element
+     */
     @Before
     public void setup() {
         calculator = new Calculator();
@@ -52,6 +56,9 @@ public class AppTest {
         }
     }
 
+    /**
+     * Should calculate the mean and coincide with the expected value
+     */
     @Test
     public void shouldCalculateMean() {
 
@@ -59,6 +66,9 @@ public class AppTest {
         assertEquals(60.32, calculator.calcMean(linkedListDevelopment), 0.0);
     }
 
+    /**
+     * Should calculate the mean and coincide with the expected value
+     */
     @Test
     public void shouldCalculateMeanSets(){
         assertEquals(43.21, calculator.calcMean(linkedList1), 0.0);
@@ -68,12 +78,18 @@ public class AppTest {
         assertEquals(193.49, calculator.calcMean(linkedList5), 0.0);
     }
 
+    /**
+     * Should calculate the standard deviation and coincide with the expected value
+     */
     @Test
     public void shouldCalculateStandarD() {
         assertEquals(572.03, calculator.calcStandardDeviation(linkedListProxy), 0.05);
         assertEquals(62.26, calculator.calcStandardDeviation(linkedListDevelopment), 0.05);
     }
 
+    /**
+     * Should calculate the standard deviation and coincide with the expected value
+     */
     @Test
     public void shouldCalculateSdSets(){
         assertEquals(57.44, calculator.calcStandardDeviation(linkedList1), 0.05);
@@ -82,6 +98,10 @@ public class AppTest {
         assertEquals(436.94, calculator.calcStandardDeviation(linkedList4), 0.05);
         assertEquals(434.98, calculator.calcStandardDeviation(linkedList5), 0.05);
     }
+
+    /**
+     * Should add a node at the right side of the set
+     */
     @Test
     public void shouldAddNodesRight(){
         double[] values = {1.11,2.23,5.32,1.02,5.12,10.11,11.11,10.11,9.11};
@@ -91,6 +111,10 @@ public class AppTest {
         assertEquals(9,linkedListTest.getSize());
 
     }
+
+    /**
+     * Should add a node at the left side of the set
+     */
     @Test
     public void shouldAddNodesLeft(){
         double[] values = {1.02,23.12,56.11,132.11,23.344,99.13,13.321,3213.1,10.10,11.133};
@@ -99,6 +123,11 @@ public class AppTest {
         }
         assertEquals(10,linkedListTest2.getSize());
     }
+
+    /**
+     * Should delete a node at the right side of the set
+     * @throws ListException when the set is empty
+     */
     @Test
     public void shouldRemove() throws ListException{
         linkedListTest3.addNodeRight(1.01);
